@@ -41,7 +41,7 @@ export default function Home() {
   if (currentPage === 'quotes' && !currentQuote) {
     getRandomQuote();
   }
-}, [currentPage, currentQuote]);
+}, [currentPage, currentQuote, getRandomQuote]);
 
   return (
     <div className={`min-h-screen transition-colors duration-500 ${
