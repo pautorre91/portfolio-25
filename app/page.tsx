@@ -10,24 +10,24 @@ export default function Home() {
 
   // Frases inspiradas en The Office
   const officeQuotes = [
-    "That's what she said! - Michael Scott",
+    "That&apos;s what she said! - Michael Scott",
     "Bears. Beets. Battlestar Galactica. - Jim Halpert",
     "I am running away from my responsibilities. - Michael Scott",
-    "I'm not superstitious, but I am a little stitious. - Michael Scott",
+    "It&apos;m not superstitious, but I am a little stitious. - Michael Scott",
     "Identity theft is not a joke! - Dwight Schrute",
     "I declare bankruptcy! - Michael Scott",
     "Fact: I am better than you. - Dwight Schrute",
-    "I'm an early bird and a night owl. - Michael Scott",
+    "It&apos;m an early bird and a night owl. - Michael Scott",
     "Question: What kind of bear is best? - Dwight Schrute",
     "I love inside jokes. Hope to be part of one someday. - Michael Scott",
     "The worst thing about prison was the dementors. - Michael Scott",
-    "I'm not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
-    "Sometimes I'll start a sentence and I don't even know where it's going. - Michael Scott",
+    "It&apos;m not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
+    "Sometimes It&apos;ll start a sentence and I dont&apos;t even know where itt&apos;s going. - Michael Scott",
     "Would I rather be feared or loved? Easy. Both. - Michael Scott",
-    "You miss 100% of the shots you don't take. - Michael Scott",
-    "I'm friends with 23 year olds. - Michael Scott",
+    "You miss 100% of the shots you dont&apos;t take. - Michael Scott",
+    "It&apos;m friends with 23 year olds. - Michael Scott",
     "Assistant to the Regional Manager. - Dwight Schrute",
-    "I have been Michael's number two guy for about five years. - Dwight Schrute",
+    "I have been Michaelt&apos;s number two guy for about five years. - Dwight Schrute",
     "I love catching people in the act. - Dwight Schrute",
     "I am fast. To give you a reference point I am somewhere between a snake and a mongoose. - Dwight Schrute"
   ];
