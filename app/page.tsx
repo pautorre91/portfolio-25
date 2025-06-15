@@ -35,7 +35,7 @@ export default function Home() {
   const getRandomQuote = useCallback(() => {
   const randomIndex = Math.floor(Math.random() * officeQuotes.length);
   setCurrentQuote(officeQuotes[randomIndex]);
-}, []);
+}, [officeQuotes]);
 
   useEffect(() => {
   if (currentPage === 'quotes' && !currentQuote) {
