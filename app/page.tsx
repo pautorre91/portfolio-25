@@ -38,15 +38,15 @@ export default function Home() {
   };
 
   useEffect(() => {
-    if (currentPage === 'quotes' && !currentQuote) {
-      getRandomQuote();
-    }
-  }, [currentPage]);
+  if (currentPage === 'quotes' && !currentQuote) {
+    getRandomQuote();
+  }
+}, [currentPage, currentQuote]);
 
   return (
     <div className={`min-h-screen transition-colors duration-500 ${
       darkMode ? 'bg-black text-white' : 'bg-white text-black'
-    } relative overflow-hidden font-['DM_Sans'] flex flex-col`}>
+    } relative overflow-hidden flex flex-col`} style={{fontFamily: 'DM Sans, sans-serif'}}>
       
       {/* Animated background */}
       <div 
