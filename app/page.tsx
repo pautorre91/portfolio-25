@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { MessageCircle, Gift, Clapperboard, ArrowLeft } from "lucide-react";
 
 export default function Home() {
@@ -32,10 +32,10 @@ export default function Home() {
     "I am fast. To give you a reference point I am somewhere between a snake and a mongoose. - Dwight Schrute"
   ];
 
-  const getRandomQuote = () => {
-    const randomIndex = Math.floor(Math.random() * officeQuotes.length);
-    setCurrentQuote(officeQuotes[randomIndex]);
-  };
+  const getRandomQuote = useCallback(() => {
+  const randomIndex = Math.floor(Math.random() * officeQuotes.length);
+  setCurrentQuote(officeQuotes[randomIndex]);
+}, []);
 
   useEffect(() => {
   if (currentPage === 'quotes' && !currentQuote) {
