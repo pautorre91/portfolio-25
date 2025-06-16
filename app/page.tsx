@@ -9,24 +9,24 @@ export default function Home() {
   const [currentQuote, setCurrentQuote] = useState('');
 
   const officeQuotes = useMemo(() => [
-    "That&apos;s what she said! - Michael Scott",
+    "That's what she said! - Michael Scott",
     "Bears. Beets. Battlestar Galactica. - Jim Halpert",
     "I am running away from my responsibilities. - Michael Scott",
-    "I&apos;m not superstitious, but I am a little stitious. - Michael Scott",
+    "I'm not superstitious, but I am a little stitious. - Michael Scott",
     "Identity theft is not a joke! - Dwight Schrute",
     "I declare bankruptcy! - Michael Scott",
     "Fact: I am better than you. - Dwight Schrute",
-    "I&apos;m an early bird and a night owl. - Michael Scott",
+    "I'm an early bird and a night owl. - Michael Scott",
     "Question: What kind of bear is best? - Dwight Schrute",
     "I love inside jokes. Hope to be part of one someday. - Michael Scott",
     "The worst thing about prison was the dementors. - Michael Scott",
-    "I&apos;m not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
-    "Sometimes I&apos;ll start a sentence and I don&apos;t even know where it&apos;s going. - Michael Scott",
+    "I'm not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
+    "Sometimes I'll start a sentence and I don't even know where it's going. - Michael Scott",
     "Would I rather be feared or loved? Easy. Both. - Michael Scott",
-    "You miss 100% of the shots you don&apos;t take. - Michael Scott",
-    "I&apos;m friends with 23 year olds. - Michael Scott",
+    "You miss 100% of the shots you don't take. - Michael Scott",
+    "I'm friends with 23 year olds. - Michael Scott",
     "Assistant to the Regional Manager. - Dwight Schrute",
-    "I have been Michael&apos;s number two guy for about five years. - Dwight Schrute",
+    "I have been Michael's number two guy for about five years. - Dwight Schrute",
     "I love catching people in the act. - Dwight Schrute",
     "I am fast. To give you a reference point I am somewhere between a snake and a mongoose. - Dwight Schrute"
   ], []);
@@ -60,7 +60,7 @@ export default function Home() {
         }}
       />
       
-      <header className={`relative z-10 w-full flex justify-between items-center px-6 py-4 border-b-[0.5px] ${
+      <header className={`relative z-10 w-full flex justify-between items-center px-4 md:px-6 py-4 border-b-[0.5px] ${
         darkMode ? 'border-white' : 'border-black'
       }`}>
         <button 
@@ -69,17 +69,18 @@ export default function Home() {
             darkMode ? 'hover:text-black hover:bg-white' : 'hover:text-white hover:bg-black'
           } hover:px-2 hover:py-1 hover:rounded`}
         >
-          <span className="font-semibold">Pablo García</span>
-          <span className="text-sm opacity-70">— Product designer</span>
+          <div className="text-left">
+            <div className="font-semibold text-sm md:text-base whitespace-nowrap">
+              Pablo García — Product designer
+            </div>
+          </div>
         </button>
         
-        <div></div>
-        
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 md:gap-3">
           <a 
             href="mailto:hellopgarciadesign@gmail.com"
             className={`
-              inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-medium 
+              inline-flex items-center justify-center gap-2 px-2 md:px-4 py-2 text-sm font-medium 
               rounded-lg border-[0.5px] transition-all duration-300 ease-out
               hover:scale-105 hover:shadow-lg
               ${darkMode 
@@ -89,7 +90,7 @@ export default function Home() {
             `}
           >
             <MessageCircle className="w-4 h-4" />
-            Let&apos;s talk
+            <span className="hidden md:inline">Let's talk</span>
           </a>
           
           <button
@@ -120,7 +121,7 @@ export default function Home() {
             <div className="mb-8 w-full max-w-2xl">
               <div className="w-[100px] h-[150px] rounded-lg overflow-hidden">
                 <img 
-                  src="/animated_bust.gif" 
+                  src="/animated_bust_01.webp" 
                   alt="Animated bust animation" 
                   className="w-full h-full object-cover rounded-lg"
                 />
@@ -129,7 +130,7 @@ export default function Home() {
             
             <div className="w-full max-w-2xl text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">
-                👋🏼 Hi, I&apos;m Pablo García
+                👋🏼 Hi, I'm Pablo García
               </h1>
               <p className="text-lg md:text-2xl leading-relaxed opacity-90 mb-8">
                 My portfolio is cooking slowly... For now you can check out some stuff
@@ -215,7 +216,7 @@ export default function Home() {
             
             <div className="mb-8">
               <p className="text-2xl md:text-3xl font-light italic leading-relaxed">
-                &quot;{currentQuote.split(' - ')[0]}&quot;
+                "{currentQuote.split(' - ')[0]}"
               </p>
             </div>
           </div>
