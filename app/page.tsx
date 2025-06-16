@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback, useMemo } from "react";
 import { MessageCircle, Gift, Clapperboard, ArrowLeft } from "lucide-react";
+import Image from 'next/image';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -9,24 +10,24 @@ export default function Home() {
   const [currentQuote, setCurrentQuote] = useState('');
 
   const officeQuotes = useMemo(() => [
-    "That&apos;s what she said! - Michael Scott",
+    "That is what she said! - Michael Scott",
     "Bears. Beets. Battlestar Galactica. - Jim Halpert",
     "I am running away from my responsibilities. - Michael Scott",
-    "I&apos;m not superstitious, but I am a little stitious. - Michael Scott",
+    "I am not superstitious, but I am a little stitious. - Michael Scott",
     "Identity theft is not a joke! - Dwight Schrute",
     "I declare bankruptcy! - Michael Scott",
     "Fact: I am better than you. - Dwight Schrute",
-    "I&apos;m an early bird and a night owl. - Michael Scott",
+    "I am an early bird and a night owl. - Michael Scott",
     "Question: What kind of bear is best? - Dwight Schrute",
     "I love inside jokes. Hope to be part of one someday. - Michael Scott",
     "The worst thing about prison was the dementors. - Michael Scott",
-    "I&apos;m not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
-    "Sometimes I&apos;ll start a sentence and I don&apos;t even know where it&apos;s going. - Michael Scott",
+    "I am not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
+    "Sometimes I will start a sentence and I do not even know where it is going. - Michael Scott",
     "Would I rather be feared or loved? Easy. Both. - Michael Scott",
-    "You miss 100% of the shots you don&apos;t take. - Michael Scott",
-    "I&apos;m friends with 23 year olds. - Michael Scott",
+    "You miss 100% of the shots you do not take. - Michael Scott",
+    "I am friends with 23 year olds. - Michael Scott",
     "Assistant to the Regional Manager. - Dwight Schrute",
-    "I have been Michael&apos;s number two guy for about five years. - Dwight Schrute",
+    "I have been Michael number two guy for about five years. - Dwight Schrute",
     "I love catching people in the act. - Dwight Schrute",
     "I am fast. To give you a reference point I am somewhere between a snake and a mongoose. - Dwight Schrute"
   ], []);
