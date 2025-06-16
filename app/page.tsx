@@ -9,24 +9,24 @@ export default function Home() {
   const [currentQuote, setCurrentQuote] = useState('');
 
   const officeQuotes = useMemo(() => [
-    "That's what she said! - Michael Scott",
+    "That&apos;s what she said! - Michael Scott",
     "Bears. Beets. Battlestar Galactica. - Jim Halpert",
     "I am running away from my responsibilities. - Michael Scott",
-    "I'm not superstitious, but I am a little stitious. - Michael Scott",
+    "I&apos;m not superstitious, but I am a little stitious. - Michael Scott",
     "Identity theft is not a joke! - Dwight Schrute",
     "I declare bankruptcy! - Michael Scott",
     "Fact: I am better than you. - Dwight Schrute",
-    "I'm an early bird and a night owl. - Michael Scott",
+    "I&apos;m an early bird and a night owl. - Michael Scott",
     "Question: What kind of bear is best? - Dwight Schrute",
     "I love inside jokes. Hope to be part of one someday. - Michael Scott",
     "The worst thing about prison was the dementors. - Michael Scott",
-    "I'm not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
-    "Sometimes I'll start a sentence and I don't even know where it's going. - Michael Scott",
+    "I&apos;m not a millionaire. I thought I would be by the time I was 30. - Michael Scott",
+    "Sometimes I&apos;ll start a sentence and I don&apos;t even know where it&apos;s going. - Michael Scott",
     "Would I rather be feared or loved? Easy. Both. - Michael Scott",
-    "You miss 100% of the shots you don't take. - Michael Scott",
-    "I'm friends with 23 year olds. - Michael Scott",
+    "You miss 100% of the shots you don&apos;t take. - Michael Scott",
+    "I&apos;m friends with 23 year olds. - Michael Scott",
     "Assistant to the Regional Manager. - Dwight Schrute",
-    "I have been Michael's number two guy for about five years. - Dwight Schrute",
+    "I have been Michael&apos;s number two guy for about five years. - Dwight Schrute",
     "I love catching people in the act. - Dwight Schrute",
     "I am fast. To give you a reference point I am somewhere between a snake and a mongoose. - Dwight Schrute"
   ], []);
@@ -90,7 +90,7 @@ export default function Home() {
             `}
           >
             <MessageCircle className="w-4 h-4" />
-            <span className="hidden md:inline">Let's talk</span>
+            <span className="hidden md:inline">Let&apos;s talk</span>
           </a>
           
           <button
@@ -121,7 +121,7 @@ export default function Home() {
             <div className="mb-8 w-full max-w-2xl">
               <div className="w-[100px] h-[150px] rounded-lg overflow-hidden">
                 <img 
-                  src="/animated_bust_01.webp" 
+                  src="/animated_bust.gif" 
                   alt="Animated bust animation" 
                   className="w-full h-full object-cover rounded-lg"
                 />
@@ -130,7 +130,7 @@ export default function Home() {
             
             <div className="w-full max-w-2xl text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">
-                👋🏼 Hi, I'm Pablo García
+                👋🏼 Hi, I&apos;m Pablo García
               </h1>
               <p className="text-lg md:text-2xl leading-relaxed opacity-90 mb-8">
                 My portfolio is cooking slowly... For now you can check out some stuff
@@ -216,7 +216,7 @@ export default function Home() {
             
             <div className="mb-8">
               <p className="text-2xl md:text-3xl font-light italic leading-relaxed">
-                "{currentQuote.split(' - ')[0]}"
+                &ldquo;{currentQuote.split(' - ')[0]}&rdquo;
               </p>
             </div>
           </div>
