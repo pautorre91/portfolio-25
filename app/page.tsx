@@ -119,7 +119,7 @@ export default function Home() {
         {currentPage === 'home' ? (
           <>
             <div className="mb-8 w-full max-w-2xl">
-              <div className="w-[100px] h-[150px] rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden">
                 <img 
                   src="/animated_bust.gif" 
                   alt="Animated bust animation" 
@@ -133,7 +133,7 @@ export default function Home() {
                 👋🏼 Hi, I&apos;m Pablo García
               </h1>
               <p className="text-lg md:text-2xl leading-relaxed opacity-90 mb-8">
-                My portfolio is cooking slowly... For now you can check out some stuff
+                My portfolio is cooking slowly... Stay tuned!
               </p>
               
               <div className="flex flex-wrap gap-4">
