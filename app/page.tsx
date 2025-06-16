@@ -119,15 +119,18 @@ export default function Home() {
       <main className="relative z-10 flex-1 flex flex-col justify-center items-center p-4">
         {currentPage === 'home' ? (
           <>
-            <div className="mb-8 w-full max-w-2xl">
-              <div className="rounded-lg overflow-hidden">
-                <img 
-                  src="/animated_bust.gif" 
-                  alt="Animated bust animation" 
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-            </div>
+            <div className="mb-8 flex justify-center">
+  <div className="relative w-60 h-60">
+    <Image
+      src="/animated_bust.gif"
+      alt="Animated bust animation"
+      fill
+      className="rounded-full object-cover"
+      sizes="240px"
+      priority
+    />
+  </div>
+</div>
             
             <div className="w-full max-w-2xl text-left">
               <h1 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">
