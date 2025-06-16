@@ -44,7 +44,7 @@ export default function Home() {
   }, [currentPage, currentQuote, getRandomQuote]);
 
   return (
-    <div className={`min-h-screen transition-colors duration-500 ${
+    <div className={`h-screen transition-colors duration-500 ${
       darkMode ? 'bg-black text-white' : 'bg-white text-black'
     } relative overflow-hidden flex flex-col`} style={{fontFamily: 'DM Sans, sans-serif'}}>
       
@@ -116,115 +116,117 @@ export default function Home() {
         </div>
       </header>
       
-      <main className="relative z-10 flex-1 flex flex-col justify-center items-center p-4">
-        {currentPage === 'home' ? (
-          <>
-            <div className="mb-8 flex justify-center">
-  <div className="relative w-60 h-60">
-    <Image
-      src="/animated_bust.gif"
-      alt="Animated bust animation"
-      fill
-      className="rounded-full object-cover"
-      sizes="240px"
-      priority
-    />
-  </div>
-</div>
-            
-            <div className="w-full max-w-2xl text-left">
-              <h1 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">
-                👋🏼 Hi, I&apos;m Pablo García
-              </h1>
-              <p className="text-lg md:text-2xl leading-relaxed opacity-90 mb-8">
-                My portfolio is cooking slowly... Stay tuned!
-              </p>
+      <main className="relative z-10 flex-1 flex items-center justify-center p-4">
+        <div className="w-full max-w-2xl">
+          {currentPage === 'home' ? (
+            <div className="text-center">
+              <div className="mb-8 flex justify-center">
+                <div className="relative w-60 h-60">
+                  <Image
+                    src="/animated_bust.gif"
+                    alt="Animated bust animation"
+                    fill
+                    className="rounded-full object-cover"
+                    sizes="240px"
+                    priority
+                  />
+                </div>
+              </div>
               
-              <div className="flex flex-wrap gap-4">
-                <a 
-                  href="/pgarcia-resume-25.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={`
-                    inline-flex items-center justify-center px-6 py-2 text-sm font-medium 
-                    rounded-lg border-[0.5px] transition-all duration-300 ease-out
-                    hover:scale-105 hover:shadow-lg hover:-translate-y-1
-                    ${darkMode 
-                      ? 'border-white text-white hover:bg-white hover:text-black hover:shadow-white/20' 
-                      : 'border-black text-black hover:bg-black hover:text-white hover:shadow-black/20'
-                    }
-                  `}
-                >
-                  Resume
-                </a>
+              <div className="text-left">
+                <h1 className="text-4xl md:text-6xl font-bold mb-2 leading-tight">
+                  👋🏼 Hi, I&apos;m Pablo García
+                </h1>
+                <p className="text-lg md:text-2xl leading-relaxed opacity-90 mb-8">
+                  My portfolio is cooking slowly... Stay tuned!
+                </p>
                 
-                <a 
-                  href="https://bento.me/pgarcia" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={`
-                    inline-flex items-center justify-center px-6 py-2 text-sm font-medium 
-                    rounded-lg border-[0.5px] transition-all duration-300 ease-out
-                    hover:scale-105 hover:shadow-lg hover:-translate-y-1
-                    ${darkMode 
-                      ? 'border-white text-white hover:bg-white hover:text-black hover:shadow-white/20' 
-                      : 'border-black text-black hover:bg-black hover:text-white hover:shadow-black/20'
-                    }
-                  `}
-                >
-                  Works
-                </a>
-                
-                <a 
-                  href="https://www.linkedin.com/in/pablo-garcia-pedro/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className={`
-                    inline-flex items-center justify-center px-6 py-2 text-sm font-medium 
-                    rounded-lg border-[0.5px] transition-all duration-300 ease-out
-                    hover:scale-105 hover:shadow-lg hover:-translate-y-1
-                    ${darkMode 
-                      ? 'border-white text-white hover:bg-white hover:text-black hover:shadow-white/20' 
-                      : 'border-black text-black hover:bg-black hover:text-white hover:shadow-black/20'
-                    }
-                  `}
-                >
-                  LinkedIn
-                </a>
+                <div className="flex flex-wrap gap-4">
+                  <a 
+                    href="/pgarcia-resume-25.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`
+                      inline-flex items-center justify-center px-6 py-2 text-sm font-medium 
+                      rounded-lg border-[0.5px] transition-all duration-300 ease-out
+                      hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                      ${darkMode 
+                        ? 'border-white text-white hover:bg-white hover:text-black hover:shadow-white/20' 
+                        : 'border-black text-black hover:bg-black hover:text-white hover:shadow-black/20'
+                      }
+                    `}
+                  >
+                    Resume
+                  </a>
+                  
+                  <a 
+                    href="https://bento.me/pgarcia" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`
+                      inline-flex items-center justify-center px-6 py-2 text-sm font-medium 
+                      rounded-lg border-[0.5px] transition-all duration-300 ease-out
+                      hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                      ${darkMode 
+                        ? 'border-white text-white hover:bg-white hover:text-black hover:shadow-white/20' 
+                        : 'border-black text-black hover:bg-black hover:text-white hover:shadow-black/20'
+                      }
+                    `}
+                  >
+                    Works
+                  </a>
+                  
+                  <a 
+                    href="https://www.linkedin.com/in/pablo-garcia-pedro/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className={`
+                      inline-flex items-center justify-center px-6 py-2 text-sm font-medium 
+                      rounded-lg border-[0.5px] transition-all duration-300 ease-out
+                      hover:scale-105 hover:shadow-lg hover:-translate-y-1
+                      ${darkMode 
+                        ? 'border-white text-white hover:bg-white hover:text-black hover:shadow-white/20' 
+                        : 'border-black text-black hover:bg-black hover:text-white hover:shadow-black/20'
+                      }
+                    `}
+                  >
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
-          </>
-        ) : (
-          <div className="w-full max-w-2xl text-left">
-            <div className="mb-8">
-              <button
-                onClick={() => setCurrentPage('home')}
-                className={`
-                  inline-flex items-center gap-2 text-sm font-light underline 
-                  transition-all duration-300 ease-out px-2 py-1 rounded
-                  hover:gap-3 hover:-translate-x-1 hover:underline-offset-4
-                  ${darkMode ? 'text-white hover:bg-white hover:text-black hover:no-underline' : 'text-black hover:bg-black hover:text-white hover:no-underline'}
-                `}
-              >
-                <ArrowLeft className="w-4 h-4 transition-transform duration-300" />
-                Back to home
-              </button>
+          ) : (
+            <div className="text-left">
+              <div className="mb-8">
+                <button
+                  onClick={() => setCurrentPage('home')}
+                  className={`
+                    inline-flex items-center gap-2 text-sm font-light underline 
+                    transition-all duration-300 ease-out px-2 py-1 rounded
+                    hover:gap-3 hover:-translate-x-1 hover:underline-offset-4
+                    ${darkMode ? 'text-white hover:bg-white hover:text-black hover:no-underline' : 'text-black hover:bg-black hover:text-white hover:no-underline'}
+                  `}
+                >
+                  <ArrowLeft className="w-4 h-4 transition-transform duration-300" />
+                  Back to home
+                </button>
+              </div>
+              
+              <div className="flex items-center gap-3 mb-2">
+                <Clapperboard className="w-8 h-8 md:w-12 md:h-12" />
+                <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
+                  {currentQuote.split(' - ')[1]}
+                </h1>
+              </div>
+              
+              <div className="mb-8">
+                <p className="text-2xl md:text-3xl font-light italic leading-relaxed">
+                  &ldquo;{currentQuote.split(' - ')[0]}&rdquo;
+                </p>
+              </div>
             </div>
-            
-            <div className="flex items-center gap-3 mb-2">
-              <Clapperboard className="w-8 h-8 md:w-12 md:h-12" />
-              <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-                {currentQuote.split(' - ')[1]}
-              </h1>
-            </div>
-            
-            <div className="mb-8">
-              <p className="text-2xl md:text-3xl font-light italic leading-relaxed">
-                &ldquo;{currentQuote.split(' - ')[0]}&rdquo;
-              </p>
-            </div>
-          </div>
-        )}
+          )}
+        </div>
       </main>
       
       <footer className={`relative z-10 w-full px-6 py-4 border-t-[0.5px] flex justify-between items-center ${
